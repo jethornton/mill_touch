@@ -10,6 +10,7 @@ Welcome to Mill VCP's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   install
    mill_touch
 
 Indices and tables
