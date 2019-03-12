@@ -1000,7 +1000,7 @@ border: 5px solid rgb(136, 138, 133);
                 <enum>QTabWidget::South</enum>
                </property>
                <property name="currentIndex">
-                <number>0</number>
+                <number>5</number>
                </property>
                <widget class="QWidget" name="tab_5">
                 <attribute name="title">
@@ -1790,6 +1790,106 @@ Tool</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="tab_3">
+                <attribute name="title">
+                 <string>Page</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <item row="0" column="0">
+                  <widget class="VCPFrame" name="vcpframe">
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] &gt; 0&quot;, &quot;name&quot;: &quot;Tool Loaded&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_8">
+                <attribute name="title">
+                 <string>Page</string>
+                </attribute>
+                <widget class="QPushButton" name="progBound">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>50</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>prog bound</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="machLabels">
+                 <property name="geometry">
+                  <rect>
+                   <x>210</x>
+                   <y>230</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>mach labels</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="progLabels">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>200</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>prog labels</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="progTicks">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>120</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>prog ticks</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="machTicks">
+                 <property name="geometry">
+                  <rect>
+                   <x>210</x>
+                   <y>150</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>mach ticks</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="machBound">
+                 <property name="geometry">
+                  <rect>
+                   <x>210</x>
+                   <y>70</y>
+                   <width>82</width>
+                   <height>52</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>mach bound</string>
+                 </property>
+                </widget>
+               </widget>
               </widget>
              </item>
             </layout>
@@ -1983,6 +2083,12 @@ Step</string>
   </action>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>VCPFrame</class>
+   <extends>QFrame</extends>
+   <header>qtpyvcp.widgets.containers.frame</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
@@ -2245,10 +2351,106 @@ Step</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>machBound</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleMachineBounds()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>machLabels</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleMachineLabels()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>machTicks</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleMachineTicks()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>progBound</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleProgramBounds()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>710</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>progLabels</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleProgramLabels()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>progTicks</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleProgramTicks()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="toolButtonGroup"/>
-  <buttongroup name="coordOffsetGroup"/>
   <buttongroup name="mdiButtonGroup"/>
+  <buttongroup name="coordOffsetGroup"/>
+  <buttongroup name="toolButtonGroup"/>
  </buttongroups>
 </ui>
