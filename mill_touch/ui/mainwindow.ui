@@ -699,6 +699,11 @@ border: 5px solid rgb(136, 138, 133);
               </item>
              </layout>
             </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Page</string>
+             </attribute>
+            </widget>
            </widget>
           </item>
           <item>
@@ -1366,329 +1371,301 @@ X</string>
                    <property name="rules" stdset="0">
                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] &gt; 0&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                    </property>
-                   <widget class="QFrame" name="gridFrame_8">
-                    <property name="geometry">
-                     <rect>
-                      <x>0</x>
-                      <y>0</y>
-                      <width>347</width>
-                      <height>427</height>
-                     </rect>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true"/>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_24">
-                     <property name="leftMargin">
-                      <number>5</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>5</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>5</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>5</number>
-                     </property>
-                     <item row="7" column="0">
-                      <widget class="QPushButton" name="pushButton_69">
-                       <property name="text">
-                        <string>-0.250</string>
+                   <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="3" column="0">
+                     <widget class="QPushButton" name="pushButton_83">
+                      <property name="text">
+                       <string>-0.125</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">toolButtonGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QPushButton" name="toolBackSpace">
+                      <property name="text">
+                       <string>Bksp</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="pushButton_70">
+                      <property name="text">
+                       <string>0.125</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">toolButtonGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="6" column="3">
+                     <widget class="QPushButton" name="toolClear">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QPushButton" name="pushButton_69">
+                      <property name="text">
+                       <string>-0.250</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">toolButtonGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="4">
+                     <widget class="QLabel" name="label_11">
+                      <property name="font">
+                       <font>
+                        <family>DejaVu Sans Mono</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Set Current Loaded Tool  Offset</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="3">
+                     <widget class="QLabel" name="toolOffsetLabel">
+                      <property name="font">
+                       <font>
+                        <family>DejaVu Sans Mono</family>
+                        <pointsize>12</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0" colspan="2">
+                     <widget class="QFrame" name="gridFrame_10">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_26">
+                       <property name="leftMargin">
+                        <number>5</number>
                        </property>
-                       <attribute name="buttonGroup">
-                        <string notr="true">toolButtonGroup</string>
-                       </attribute>
-                      </widget>
-                     </item>
-                     <item row="6" column="0">
-                      <widget class="QPushButton" name="pushButton_68">
-                       <property name="text">
-                        <string>0.250</string>
+                       <property name="topMargin">
+                        <number>5</number>
                        </property>
-                       <attribute name="buttonGroup">
-                        <string notr="true">toolButtonGroup</string>
-                       </attribute>
-                      </widget>
-                     </item>
-                     <item row="4" column="0">
-                      <widget class="QPushButton" name="pushButton_70">
-                       <property name="text">
-                        <string>0.125</string>
+                       <property name="rightMargin">
+                        <number>5</number>
                        </property>
-                       <attribute name="buttonGroup">
-                        <string notr="true">toolButtonGroup</string>
-                       </attribute>
-                      </widget>
-                     </item>
-                     <item row="4" column="1" rowspan="4" colspan="3">
-                      <widget class="QFrame" name="gridFrame_9">
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
+                       <property name="bottomMargin">
+                        <number>5</number>
                        </property>
-                       <layout class="QGridLayout" name="gridLayout_25">
-                        <property name="leftMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="topMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="rightMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="bottomMargin">
-                         <number>5</number>
-                        </property>
-                        <item row="2" column="0">
-                         <widget class="QPushButton" name="pushButton_71">
-                          <property name="text">
-                           <string>1</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="1" column="1">
-                         <widget class="QPushButton" name="pushButton_72">
-                          <property name="text">
-                           <string>5</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="1" column="0">
-                         <widget class="QPushButton" name="pushButton_73">
-                          <property name="text">
-                           <string>4</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="3" column="0">
-                         <widget class="QPushButton" name="pushButton_74">
-                          <property name="text">
-                           <string>0</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="2" column="1">
-                         <widget class="QPushButton" name="pushButton_75">
-                          <property name="text">
-                           <string>2</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="2" column="2">
-                         <widget class="QPushButton" name="pushButton_76">
-                          <property name="text">
-                           <string>3</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="3" column="2">
-                         <widget class="QPushButton" name="pushButton_77">
-                          <property name="text">
-                           <string>-</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="1" column="2">
-                         <widget class="QPushButton" name="pushButton_78">
-                          <property name="text">
-                           <string>6</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="3" column="1">
-                         <widget class="QPushButton" name="pushButton_79">
-                          <property name="text">
-                           <string>.</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="0" column="1">
-                         <widget class="QPushButton" name="pushButton_80">
-                          <property name="text">
-                           <string>8</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="0" column="2">
-                         <widget class="QPushButton" name="pushButton_81">
-                          <property name="text">
-                           <string>9</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="0" column="0">
-                         <widget class="QPushButton" name="pushButton_82">
-                          <property name="text">
-                           <string>7</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">toolButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                       </layout>
-                      </widget>
-                     </item>
-                     <item row="1" column="1" colspan="3">
-                      <widget class="QLabel" name="toolOffsetLabel">
-                       <property name="font">
-                        <font>
-                         <family>DejaVu Sans Mono</family>
-                         <pointsize>12</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="5" column="0">
-                      <widget class="QPushButton" name="pushButton_83">
-                       <property name="text">
-                        <string>-0.125</string>
-                       </property>
-                       <attribute name="buttonGroup">
-                        <string notr="true">toolButtonGroup</string>
-                       </attribute>
-                      </widget>
-                     </item>
-                     <item row="8" column="3">
-                      <widget class="QPushButton" name="toolClear">
-                       <property name="text">
-                        <string>Clear</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="8" column="2">
-                      <widget class="QPushButton" name="toolBackSpace">
-                       <property name="text">
-                        <string>Bksp</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="StatusLabel" name="toolInSpindle">
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                       <property name="rules" stdset="0">
-                        <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Current Tool&quot;}]</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="8" column="0" colspan="2">
-                      <widget class="QFrame" name="gridFrame_10">
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
-                       </property>
-                       <layout class="QGridLayout" name="gridLayout_26">
-                        <property name="leftMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="topMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="rightMargin">
-                         <number>5</number>
-                        </property>
-                        <property name="bottomMargin">
-                         <number>5</number>
-                        </property>
-                        <item row="0" column="0">
-                         <widget class="MDIButton" name="mdibutton_23">
-                          <property name="text">
-                           <string>Set
+                       <item row="0" column="0">
+                        <widget class="MDIButton" name="mdibutton_23">
+                         <property name="text">
+                          <string>Set
 Z</string>
-                          </property>
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] != 0&quot;, &quot;name&quot;: &quot;Enable&quot;}]</string>
-                          </property>
-                          <property name="MDICommand" stdset="0">
-                           <string>G10 L10 P#&lt;toolInSpindle&gt; Z#&lt;toolOffsetLabel&gt;</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="0" column="1">
-                         <widget class="MDIButton" name="mdibutton_6">
-                          <property name="text">
-                           <string>Reload
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] != 0&quot;, &quot;name&quot;: &quot;Enable&quot;}]</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G10 L10 P#&lt;toolInSpindle&gt; Z#&lt;toolOffsetLabel&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="MDIButton" name="mdibutton_6">
+                         <property name="text">
+                          <string>Reload
 Tool</string>
-                          </property>
-                          <property name="MDICommand" stdset="0">
-                           <string>G43</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </widget>
-                     </item>
-                     <item row="0" column="0" colspan="4">
-                      <widget class="QLabel" name="label_11">
-                       <property name="font">
-                        <font>
-                         <family>DejaVu Sans Mono</family>
-                         <pointsize>10</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G43</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QPushButton" name="pushButton_68">
+                      <property name="text">
+                       <string>0.250</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">toolButtonGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" rowspan="4" colspan="3">
+                     <widget class="QFrame" name="gridFrame_9">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_25">
+                       <property name="leftMargin">
+                        <number>5</number>
                        </property>
-                       <property name="text">
-                        <string>Set Current Loaded Tool  Offset</string>
+                       <property name="topMargin">
+                        <number>5</number>
                        </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
+                       <property name="rightMargin">
+                        <number>5</number>
                        </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item row="2" column="0">
+                        <widget class="QPushButton" name="pushButton_71">
+                         <property name="text">
+                          <string>1</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QPushButton" name="pushButton_72">
+                         <property name="text">
+                          <string>5</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QPushButton" name="pushButton_73">
+                         <property name="text">
+                          <string>4</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QPushButton" name="pushButton_74">
+                         <property name="text">
+                          <string>0</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QPushButton" name="pushButton_75">
+                         <property name="text">
+                          <string>2</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QPushButton" name="pushButton_76">
+                         <property name="text">
+                          <string>3</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QPushButton" name="pushButton_77">
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QPushButton" name="pushButton_78">
+                         <property name="text">
+                          <string>6</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QPushButton" name="pushButton_79">
+                         <property name="text">
+                          <string>.</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QPushButton" name="pushButton_80">
+                         <property name="text">
+                          <string>8</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QPushButton" name="pushButton_81">
+                         <property name="text">
+                          <string>9</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QPushButton" name="pushButton_82">
+                         <property name="text">
+                          <string>7</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">toolButtonGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="StatusLabel" name="toolInSpindle">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Current Tool&quot;}]</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -2436,7 +2413,7 @@ Step</string>
  </connections>
  <buttongroups>
   <buttongroup name="coordOffsetGroup"/>
-  <buttongroup name="mdiButtonGroup"/>
   <buttongroup name="toolButtonGroup"/>
+  <buttongroup name="mdiButtonGroup"/>
  </buttongroups>
 </ui>
