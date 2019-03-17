@@ -671,6 +671,12 @@ border: 5px solid rgb(136, 138, 133);
                    <attribute name="horizontalHeaderMinimumSectionSize">
                     <number>150</number>
                    </attribute>
+                   <attribute name="verticalHeaderDefaultSectionSize">
+                    <number>50</number>
+                   </attribute>
+                   <attribute name="verticalHeaderMinimumSectionSize">
+                    <number>50</number>
+                   </attribute>
                   </widget>
                  </item>
                  <item row="1" column="2">
@@ -760,22 +766,6 @@ border: 5px solid rgb(136, 138, 133);
                   </property>
                   <property name="rules" stdset="0">
                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.1.homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Y Axis *' if ch[0] else 'Y Axis'&quot;, &quot;name&quot;: &quot;Homed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.1.homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'background-color:rgb(150,255,150)' if ch[0] else 'background-color:rgb(240,240,80)'&quot;, &quot;name&quot;: &quot;Background Color&quot;}]</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="0">
-                 <widget class="StatusLabel" name="statuslabel_3">
-                  <property name="font">
-                   <font>
-                    <family>DejaVu Sans</family>
-                    <pointsize>12</pointsize>
-                   </font>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::Box</enum>
-                  </property>
-                  <property name="rules" stdset="0">
-                   <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Current Coordinate Sytem&quot;}]</string>
                   </property>
                  </widget>
                 </item>
@@ -1006,6 +996,22 @@ border: 5px solid rgb(136, 138, 133);
                   </property>
                  </widget>
                 </item>
+                <item row="4" column="0">
+                 <widget class="StatusLabel" name="statuslabel_3">
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="rules" stdset="0">
+                   <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Current Coordinate Sytem&quot;}]</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -1023,27 +1029,122 @@ border: 5px solid rgb(136, 138, 133);
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <item row="0" column="0">
-                  <widget class="QFrame" name="gridFrame">
-                   <property name="styleSheet">
-                    <string notr="true"/>
+                  <widget class="VCPWidget" name="widget">
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Homed&quot;}]</string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_6">
-                    <property name="leftMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>5</number>
-                    </property>
+                   <layout class="QGridLayout" name="gridLayout_22">
+                    <item row="6" column="1">
+                     <widget class="QPushButton" name="pushButton_90">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0" colspan="4">
+                     <widget class="QFrame" name="gridFrame">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_11">
+                       <property name="leftMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item row="0" column="2">
+                        <widget class="MDIButton" name="mdibutton_4">
+                         <property name="text">
+                          <string>Set
+Y</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G10L20P0Y#&lt;cordOffsetLbl&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="MDIButton" name="mdibutton_9">
+                         <property name="text">
+                          <string>Set
+X Y Z</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="3">
+                        <widget class="MDIButton" name="mdibutton_5">
+                         <property name="text">
+                          <string>Set
+Z</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G10L20P0Z#&lt;cordOffsetLbl&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="MDIButton" name="mdibutton_3">
+                         <property name="text">
+                          <string>Set
+X</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="3">
+                     <widget class="QLabel" name="cordOffsetLbl">
+                      <property name="font">
+                       <font>
+                        <family>DejaVu Sans Mono</family>
+                        <pointsize>12</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="6" column="0">
+                     <widget class="QPushButton" name="pushButton_88">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QPushButton" name="pushButton_15">
+                      <property name="text">
+                       <string>-0.250</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">coordOffsetGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
                      <widget class="QPushButton" name="pushButton_14">
                       <property name="text">
                        <string>0.250</string>
@@ -1053,14 +1154,11 @@ border: 5px solid rgb(136, 138, 133);
                       </attribute>
                      </widget>
                     </item>
-                    <item row="7" column="0">
-                     <widget class="QPushButton" name="pushButton_15">
+                    <item row="6" column="3">
+                     <widget class="QPushButton" name="coordClear">
                       <property name="text">
-                       <string>-0.250</string>
+                       <string>Clear</string>
                       </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">coordOffsetGroup</string>
-                      </attribute>
                      </widget>
                     </item>
                     <item row="4" column="0">
@@ -1073,25 +1171,14 @@ border: 5px solid rgb(136, 138, 133);
                       </attribute>
                      </widget>
                     </item>
-                    <item row="0" column="0" colspan="5">
-                     <widget class="QLabel" name="label_4">
-                      <property name="font">
-                       <font>
-                        <family>DejaVu Sans Mono</family>
-                        <pointsize>10</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                       </font>
-                      </property>
+                    <item row="6" column="2">
+                     <widget class="QPushButton" name="pushButton_91">
                       <property name="text">
-                       <string>Set Current Coordinate System Offsets</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
+                       <string>Bksp</string>
                       </property>
                      </widget>
                     </item>
-                    <item row="4" column="2" rowspan="4" colspan="3">
+                    <item row="2" column="1" rowspan="4" colspan="3">
                      <widget class="QFrame" name="gridFrame">
                       <property name="frameShape">
                        <enum>QFrame::Box</enum>
@@ -1232,27 +1319,6 @@ border: 5px solid rgb(136, 138, 133);
                       </layout>
                      </widget>
                     </item>
-                    <item row="1" column="2" colspan="3">
-                     <widget class="QLabel" name="cordOffsetLbl">
-                      <property name="font">
-                       <font>
-                        <family>DejaVu Sans Mono</family>
-                        <pointsize>12</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                       </font>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::Box</enum>
-                      </property>
-                      <property name="text">
-                       <string/>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
                     <item row="5" column="0">
                      <widget class="QPushButton" name="pushButton_41">
                       <property name="text">
@@ -1260,96 +1326,21 @@ border: 5px solid rgb(136, 138, 133);
                       </property>
                      </widget>
                     </item>
-                    <item row="9" column="0" colspan="5">
-                     <widget class="QFrame" name="gridFrame">
-                      <property name="frameShape">
-                       <enum>QFrame::Box</enum>
+                    <item row="0" column="0" colspan="4">
+                     <widget class="QLabel" name="label_4">
+                      <property name="font">
+                       <font>
+                        <family>DejaVu Sans Mono</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
                       </property>
-                      <layout class="QGridLayout" name="gridLayout_11">
-                       <property name="leftMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>5</number>
-                       </property>
-                       <item row="0" column="2">
-                        <widget class="MDIButton" name="mdibutton_4">
-                         <property name="text">
-                          <string>Set
-Y</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>G10L20P0Y#&lt;cordOffsetLbl&gt;</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0">
-                        <widget class="MDIButton" name="mdibutton_9">
-                         <property name="text">
-                          <string>Set
-X Y Z</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="3">
-                        <widget class="MDIButton" name="mdibutton_5">
-                         <property name="text">
-                          <string>Set
-Z</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>G10L20P0Z#&lt;cordOffsetLbl&gt;</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="MDIButton" name="mdibutton_3">
-                         <property name="text">
-                          <string>Set
-X</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item row="8" column="0">
-                     <widget class="QPushButton" name="pushButton_88">
                       <property name="text">
-                       <string/>
+                       <string>Set Current Coordinate System Offsets</string>
                       </property>
-                     </widget>
-                    </item>
-                    <item row="8" column="4">
-                     <widget class="QPushButton" name="coordClear">
-                      <property name="text">
-                       <string>Clear</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="8" column="2">
-                     <widget class="QPushButton" name="pushButton_90">
-                      <property name="text">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="8" column="3">
-                     <widget class="QPushButton" name="pushButton_91">
-                      <property name="text">
-                       <string>Bksp</string>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -2089,6 +2080,12 @@ Step</string>
    <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
   </customwidget>
   <customwidget>
+   <class>VCPWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.containers.widget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>MDIEntry</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
@@ -2412,8 +2409,8 @@ Step</string>
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="coordOffsetGroup"/>
   <buttongroup name="toolButtonGroup"/>
+  <buttongroup name="coordOffsetGroup"/>
   <buttongroup name="mdiButtonGroup"/>
  </buttongroups>
 </ui>
