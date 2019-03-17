@@ -20,15 +20,28 @@ efficient than Gremlin.
    :align: center
    :scale: 60 %
 
+Mill Touch also takes advantage of the new containers with rules. As you can see
+everything in the tool offset tab is disabled because no tool is loaded.
+
 .. image:: images/mill-touch-04.png
    :align: center
    :scale: 60 %
+
+Now you can see the whole tab is enabled after loading a tool.
 
 .. image:: images/mill-touch-05.png
    :align: center
    :scale: 60 %
 
 .. image:: images/mill-touch-06.png
+   :align: center
+   :scale: 60 %
+
+.. image:: images/mill-touch-07.png
+   :align: center
+   :scale: 60 %
+
+.. image:: images/mill-touch-08.png
    :align: center
    :scale: 60 %
 
