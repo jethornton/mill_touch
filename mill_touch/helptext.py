@@ -136,13 +136,13 @@ def gcode_words():
 
 def gcode_descriptions(gcode):
 
-    gcodeTitle = {'G0':'Coordinated Motion at Rapid Rate',
-        'G1':'Coordinated Motion at Feed Rate',
+    gcodeTitle = {'G0':G0,
+        'G1':G1,
         'G2':G2,
-        'G3':'Coordinated Counterclockwise Helical Motion at Feed Rate',
-        'G4':'Dwell',
-        'G5':'Cubic Spline',
-        'G5.1':'Quadratic B-Spline',
+        'G3':G3,
+        'G4':G4,
+        'G5':G5,
+        'G5.1':G5_1,
         'G5.2':'NURBS, add control point',
         'G7':'Diameter Mode (lathe)',
         'G8':'Radius Mode (lathe)',
@@ -225,9 +225,13 @@ def gcode_descriptions(gcode):
     else:
         return ''
 
+G0 = """G0 axes
+Coordinated motion at maximum speed
+"""
 
-
-
+G1 = """G1 axes
+Coordinated motion at feed speed
+"""
 
 G2 = """G2 Coordinated Clockwise Helical Motion at Feed Rate
 Center Format G2 axes offsets <P>
@@ -237,5 +241,33 @@ YZ plane (G19)\nX = helix\nJ = Y offset\nK = Z offset\n
 P = Number of Turns\n
 Radius Format G2 axes R <P>
 R = Radius from Current Position
+"""
+
+G3 = """G3 Coordinated Counterclockwise Helical Motion at Feed Rate
+Center Format G3 axes offsets <P>
+XY plane (G17)\nZ = helix\nI = X offset\nJ = Y offset\n
+XZ plane (G18)\nY = helix\nI = X offset\nK = Z offset\n
+YZ plane (G19)\nX = helix\nJ = Y offset\nK = Z offset\n
+P = Number of Turns\n
+Radius Format G3 axes R <P>
+R = Radius from Current Position
+"""
+
+G4 = """G4 P
+Dwell program for P seconds, floating point.
+"""
+
+G5 = """G5 X Y <I J> P Q
+Cubic Spline
+I = X incremental offset from start point to first control point
+J = Y incremental offset from start point to first control point
+P = X incremental offset from end point to second control point
+Q = Y incremental offset from end point to second control point
+
+G5 creates a cubic B-spline in the XY plane with the X and Y axes only.
+P and Q must both be specified for every G5 command.
+"""
+
+G5_1 = """ Quadratic Spline
 """
 
