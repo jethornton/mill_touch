@@ -48,3 +48,4 @@ application:
   kwargs:
     # Specify the application wide stylesheet.
     stylesheet: {{ file.dir }}/ui/style.qss
+    # stylesheet: {{ file.dir }}/ui/dark.qss

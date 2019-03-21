@@ -11,6 +11,7 @@ Welcome to Mill VCP's documentation!
    :caption: Contents:
 
    install
+   configuration
    mill_touch
 
 Indices and tables
