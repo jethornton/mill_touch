@@ -196,32 +196,32 @@ width: 100px;
              </attribute>
              <layout class="QGridLayout" name="gridLayout_28">
               <item row="0" column="0">
-               <widget class="VCPWidget" name="widget">
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_30">
-                 <item row="0" column="0">
-                  <widget class="QTabWidget" name="tabWidget_3">
-                   <property name="styleSheet">
-                    <string notr="true">QTabBar::tab {
+               <widget class="QTabWidget" name="tabWidget_3">
+                <property name="styleSheet">
+                 <string notr="true">QTabBar::tab {
 height: 50px;
 width: 100px;
 }
 </string>
-                   </property>
-                   <property name="tabPosition">
-                    <enum>QTabWidget::South</enum>
-                   </property>
-                   <property name="currentIndex">
-                    <number>1</number>
-                   </property>
-                   <widget class="QWidget" name="tab_11">
-                    <attribute name="title">
-                     <string>MDI</string>
-                    </attribute>
-                    <layout class="QGridLayout" name="gridLayout_31">
-                     <item row="2" column="0">
+                </property>
+                <property name="tabPosition">
+                 <enum>QTabWidget::South</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab_11">
+                 <attribute name="title">
+                  <string>MDI</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_31">
+                  <item row="0" column="0">
+                   <widget class="VCPWidget" name="widget_3">
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_3">
+                     <item row="3" column="0">
                       <widget class="QFrame" name="gridFrame">
                        <property name="styleSheet">
                         <string notr="true"/>
@@ -233,16 +233,6 @@ width: 100px;
                         <number>2</number>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_29">
-                        <item row="1" column="0" colspan="6">
-                         <widget class="MDIEntry" name="mdiSmartEntry">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>12</pointsize>
-                           </font>
-                          </property>
-                         </widget>
-                        </item>
                         <item row="8" column="4" colspan="2">
                          <widget class="QPushButton" name="mdiSmartSendBtn">
                           <property name="font">
@@ -501,28 +491,6 @@ Parameters</string>
                             </widget>
                            </item>
                           </layout>
-                         </widget>
-                        </item>
-                        <item row="0" column="0" colspan="6">
-                         <widget class="QLabel" name="gcodeDescription">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>11</pointsize>
-                            <weight>9</weight>
-                            <italic>false</italic>
-                            <bold>false</bold>
-                           </font>
-                          </property>
-                          <property name="frameShape">
-                           <enum>QFrame::Box</enum>
-                          </property>
-                          <property name="lineWidth">
-                           <number>2</number>
-                          </property>
-                          <property name="text">
-                           <string/>
-                          </property>
                          </widget>
                         </item>
                         <item row="7" column="0">
@@ -791,6 +759,38 @@ Parameters</string>
                        </layout>
                       </widget>
                      </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="gcodeDescription">
+                       <property name="font">
+                        <font>
+                         <family>DejaVu Sans</family>
+                         <pointsize>11</pointsize>
+                         <weight>9</weight>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="lineWidth">
+                        <number>2</number>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="MDIEntry" name="mdiSmartEntry">
+                       <property name="font">
+                        <font>
+                         <family>DejaVu Sans</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                      </widget>
+                     </item>
                      <item row="0" column="0">
                       <spacer name="verticalSpacer">
                        <property name="orientation">
@@ -806,38 +806,41 @@ Parameters</string>
                      </item>
                     </layout>
                    </widget>
-                   <widget class="QWidget" name="tab_13">
-                    <attribute name="title">
-                     <string>G code Help</string>
-                    </attribute>
-                    <layout class="QGridLayout" name="gridLayout_32">
-                     <item row="0" column="0">
-                      <widget class="QLabel" name="gcodeHelpLabel">
-                       <property name="font">
-                        <font>
-                         <family>DejaVu Sans</family>
-                         <pointsize>11</pointsize>
-                        </font>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
-                       </property>
-                       <property name="lineWidth">
-                        <number>2</number>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_13">
+                 <attribute name="title">
+                  <string>G code Help</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_32">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="gcodeHelpLabel">
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="lineWidth">
+                     <number>2</number>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                    </property>
+                    <property name="borderStyle" stdset="0">
+                     <string>solid</string>
+                    </property>
                    </widget>
-                  </widget>
-                 </item>
-                </layout>
+                  </item>
+                 </layout>
+                </widget>
                </widget>
               </item>
              </layout>

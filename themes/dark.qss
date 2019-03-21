@@ -7,6 +7,19 @@ StatusLabel[borderStyle="solid"]{
     border-width: 2px;
     border-radius: 5px;
     padding: 4px;
+    border-color: #76797c;
+}
+
+QLabel[borderStyle="solid"]{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    border-color: #76797c;
+}
+
+QLabel[borderStyle="solid"]:disabled{
+    border-color: #454545;
 }
 
 ActionButton{
