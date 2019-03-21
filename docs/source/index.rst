@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Mill VCP's documentation!
-====================================
+Mill Touch Screen VCP
+=====================
+
+A QtPyVCP 3 Axis Mill Touch Screen Interface
 
 .. toctree::
    :maxdepth: 2
