@@ -22,3 +22,7 @@ To install Mill Touch and be able to edit and change things in a terminal:
     cd mill_touch
     pip install -e .
 
+To update a cloned repo open a terminal in mill_touch and do:
+::
+
+    git pull
