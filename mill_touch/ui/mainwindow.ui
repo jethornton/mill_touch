@@ -121,7 +121,7 @@ width: 100px;
              <enum>QTabWidget::South</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="tab">
              <attribute name="title">
@@ -197,6 +197,12 @@ width: 100px;
              <layout class="QGridLayout" name="gridLayout_28">
               <item row="0" column="0">
                <widget class="QTabWidget" name="tabWidget_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">QTabBar::tab {
 height: 50px;
@@ -214,558 +220,26 @@ width: 100px;
                  <attribute name="title">
                   <string>MDI</string>
                  </attribute>
-                 <layout class="QGridLayout" name="gridLayout_31">
-                  <item row="0" column="0">
-                   <widget class="VCPWidget" name="widget_3">
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="VCPWidget" name="widget_8" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                     </property>
-                    <layout class="QGridLayout" name="gridLayout_3">
-                     <item row="3" column="0">
-                      <widget class="QFrame" name="gridFrame">
-                       <property name="styleSheet">
-                        <string notr="true"/>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::Box</enum>
-                       </property>
-                       <property name="lineWidth">
-                        <number>2</number>
-                       </property>
-                       <layout class="QGridLayout" name="gridLayout_29">
-                        <item row="8" column="4" colspan="2">
-                         <widget class="QPushButton" name="mdiSmartSendBtn">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>Send</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="8" column="0" colspan="2">
-                         <widget class="QPushButton" name="mdiLoadParameters">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>Load
-Parameters</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="8" column="2" colspan="2">
-                         <widget class="QPushButton" name="pushButton_85">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>G code Help</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="7" column="3">
-                         <widget class="QPushButton" name="pushButton_67">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>F</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">mdiSmartButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="2" column="3" rowspan="5" colspan="3">
-                         <widget class="QFrame" name="gridFrame">
-                          <property name="frameShape">
-                           <enum>QFrame::Box</enum>
-                          </property>
-                          <property name="lineWidth">
-                           <number>2</number>
-                          </property>
-                          <layout class="QGridLayout" name="gridLayout_34">
-                           <item row="1" column="0">
-                            <widget class="QPushButton" name="pushButton_57">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>4</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="0" column="1">
-                            <widget class="QPushButton" name="pushButton_56">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>8</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="1" column="1">
-                            <widget class="QPushButton" name="pushButton_58">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>5</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="0" column="0">
-                            <widget class="QPushButton" name="pushButton_55">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>7</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="2" column="1">
-                            <widget class="QPushButton" name="pushButton_60">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>2</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="0" column="2">
-                            <widget class="QPushButton" name="pushButton_54">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>9</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="1" column="2">
-                            <widget class="QPushButton" name="pushButton_53">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>6</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="2" column="2">
-                            <widget class="QPushButton" name="pushButton_52">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>3</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="2" column="0">
-                            <widget class="QPushButton" name="pushButton_59">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>1</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="3" column="0">
-                            <widget class="QPushButton" name="pushButton_61">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>0</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="3" column="1">
-                            <widget class="QPushButton" name="pushButton_62">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>.</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="3" column="2">
-                            <widget class="QPushButton" name="pushButton_63">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>-</string>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                          </layout>
-                         </widget>
-                        </item>
-                        <item row="7" column="0">
-                         <widget class="QPushButton" name="pushButton_66">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>G</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">mdiSmartButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="7" column="2">
-                         <widget class="QPushButton" name="pushButton_64">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>T</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">mdiSmartButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="7" column="4">
-                         <widget class="QPushButton" name="pushButton_84">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>S</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">mdiSmartButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="7" column="5">
-                         <widget class="QPushButton" name="mdiSmartBackspace">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>Bksp</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="7" column="1">
-                         <widget class="QPushButton" name="pushButton_65">
-                          <property name="font">
-                           <font>
-                            <family>DejaVu Sans</family>
-                            <pointsize>14</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>M</string>
-                          </property>
-                          <attribute name="buttonGroup">
-                           <string notr="true">mdiSmartButtonGroup</string>
-                          </attribute>
-                         </widget>
-                        </item>
-                        <item row="2" column="0" rowspan="5" colspan="3">
-                         <widget class="QFrame" name="gridFrame">
-                          <property name="frameShape">
-                           <enum>QFrame::Box</enum>
-                          </property>
-                          <property name="lineWidth">
-                           <number>2</number>
-                          </property>
-                          <layout class="QGridLayout" name="gridLayout_35">
-                           <item row="0" column="2">
-                            <widget class="QPushButton" name="gcodeParameter_2">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="1" column="1">
-                            <widget class="QPushButton" name="gcodeParameter_4">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="1" column="2">
-                            <widget class="QPushButton" name="gcodeParameter_5">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="0" column="1">
-                            <widget class="QPushButton" name="gcodeParameter_1">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="0" column="0">
-                            <widget class="QPushButton" name="gcodeParameter_0">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="2" column="1">
-                            <widget class="QPushButton" name="gcodeParameter_7">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="1" column="0">
-                            <widget class="QPushButton" name="gcodeParameter_3">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                             <attribute name="buttonGroup">
-                              <string notr="true">mdiSmartButtonGroup</string>
-                             </attribute>
-                            </widget>
-                           </item>
-                           <item row="2" column="0">
-                            <widget class="QPushButton" name="gcodeParameter_6">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="2" column="2">
-                            <widget class="QPushButton" name="gcodeParameter_8">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="3" column="0">
-                            <widget class="QPushButton" name="gcodeParameter_9">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="3" column="1">
-                            <widget class="QPushButton" name="gcodeParameter_10">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="3" column="2">
-                            <widget class="QPushButton" name="gcodeParameter_11">
-                             <property name="font">
-                              <font>
-                               <family>DejaVu Sans</family>
-                               <pointsize>14</pointsize>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </widget>
-                           </item>
-                          </layout>
-                         </widget>
-                        </item>
-                       </layout>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QLabel" name="gcodeDescription">
+                    <layout class="QGridLayout" name="gridLayout_14">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="gcodeDescription_3">
                        <property name="font">
                         <font>
                          <family>DejaVu Sans</family>
                          <pointsize>11</pointsize>
-                         <weight>9</weight>
+                         <weight>50</weight>
                          <italic>false</italic>
                          <bold>false</bold>
                         </font>
@@ -782,7 +256,1172 @@ Parameters</string>
                       </widget>
                      </item>
                      <item row="2" column="0">
-                      <widget class="MDIEntry" name="mdiSmartEntry">
+                      <widget class="QFrame" name="gridFrame_6">
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="lineWidth">
+                        <number>2</number>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_9">
+                        <item>
+                         <widget class="QWidget" name="widget_15" native="true">
+                          <layout class="QHBoxLayout" name="horizontalLayout_14">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QFrame" name="gridFrame_13">
+                             <property name="minimumSize">
+                              <size>
+                               <width>240</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::Box</enum>
+                             </property>
+                             <property name="lineWidth">
+                              <number>2</number>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_8">
+                              <item>
+                               <widget class="QWidget" name="widget_9" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_48">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_49">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_50">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_16" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_51">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_52">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_53">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_17" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_54">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_55">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_56">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_18" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_18">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_57">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_58">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="gcodeParameter_59">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="gridFrame_14">
+                             <property name="frameShape">
+                              <enum>QFrame::Box</enum>
+                             </property>
+                             <property name="lineWidth">
+                              <number>2</number>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_5">
+                              <item>
+                               <widget class="QWidget" name="widget_19" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_137">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>7</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_138">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>8</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_139">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>9</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_20" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_140">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>4</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_141">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>5</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_142">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>6</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_21" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_143">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>1</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_144">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>2</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_145">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>3</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_22" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_146">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>0</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_147">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>-</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="pushButton_148">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>52</width>
+                                     <height>52</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>DejaVu Sans</family>
+                                     <pointsize>14</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>.</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget_10" native="true">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>1</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_7">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_119">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>G</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_120">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>M</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_121">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>T</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_122">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>F</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_123">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>S</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="mdiSmartBackspace_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Bksp</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget_11" native="true">
+                          <layout class="QHBoxLayout" name="horizontalLayout_8">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_124">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>G code Help</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="mdiLoadParameters_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Load
+Parameters</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="mdiSmartSendBtn_3">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>DejaVu Sans</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Send</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="MDIEntry" name="mdiSmartEntry_3">
                        <property name="font">
                         <font>
                          <family>DejaVu Sans</family>
@@ -790,19 +1429,6 @@ Parameters</string>
                         </font>
                        </property>
                       </widget>
-                     </item>
-                     <item row="0" column="0">
-                      <spacer name="verticalSpacer">
-                       <property name="orientation">
-                        <enum>Qt::Vertical</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>20</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </spacer>
                      </item>
                     </layout>
                    </widget>
@@ -919,6 +1545,1182 @@ Parameters</string>
                </widget>
               </item>
              </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Page</string>
+             </attribute>
+             <widget class="QFrame" name="gridFrame_7">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>531</width>
+                <height>421</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="lineWidth">
+               <number>2</number>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QWidget" name="widget_23" native="true">
+                 <layout class="QHBoxLayout" name="horizontalLayout_22">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="gridFrame_15">
+                    <property name="minimumSize">
+                     <size>
+                      <width>240</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="lineWidth">
+                     <number>2</number>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_11">
+                     <item>
+                      <widget class="QWidget" name="widget_12" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_23">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_60">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_61">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_62">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_24" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_24">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_63">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_64">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_65">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_25" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_25">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_66">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_67">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_68">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_26" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_26">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_69">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_70">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="gcodeParameter_71">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="gridFrame_16">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="lineWidth">
+                     <number>2</number>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                     <item>
+                      <widget class="QWidget" name="widget_27" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_9">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_149">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>7</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_150">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>8</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_151">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>9</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_28" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_27">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_152">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>4</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_153">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>5</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_154">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>6</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_29" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_28">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_155">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>1</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_156">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>2</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_157">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>3</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_30" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_158">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>0</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_159">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>-</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButton_160">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>52</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>70</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>14</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>.</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_13" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_125">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>G</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_126">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>M</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_127">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>T</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_128">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_129">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>S</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="mdiSmartBackspace_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Bksp</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_14" native="true">
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_130">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>G code Help</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="mdiLoadParameters_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Load
+Parameters</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="mdiSmartSendBtn_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DejaVu Sans</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Send</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
             </widget>
            </widget>
           </item>
@@ -1266,7 +3068,7 @@ Parameters</string>
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <item row="0" column="0">
-                  <widget class="VCPWidget" name="g5xWidget">
+                  <widget class="VCPWidget" name="g5xWidget" native="true">
                    <property name="layoutDirection">
                     <enum>Qt::LeftToRight</enum>
                    </property>
@@ -1295,13 +3097,6 @@ Parameters</string>
                     <property name="spacing">
                      <number>5</number>
                     </property>
-                    <item row="6" column="1">
-                     <widget class="QPushButton" name="pushButton_90">
-                      <property name="text">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
                     <item row="7" column="0" colspan="4">
                      <widget class="QFrame" name="gridFrame">
                       <property name="frameShape">
@@ -1367,198 +3162,6 @@ X</string>
                       </layout>
                      </widget>
                     </item>
-                    <item row="6" column="0">
-                     <widget class="QPushButton" name="pushButton_88">
-                      <property name="text">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="3" column="0">
-                     <widget class="QPushButton" name="pushButton_15">
-                      <property name="text">
-                       <string>-0.250</string>
-                      </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">coordOffsetGroup</string>
-                      </attribute>
-                     </widget>
-                    </item>
-                    <item row="2" column="0">
-                     <widget class="QPushButton" name="pushButton_14">
-                      <property name="text">
-                       <string>0.250</string>
-                      </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">coordOffsetGroup</string>
-                      </attribute>
-                     </widget>
-                    </item>
-                    <item row="6" column="3">
-                     <widget class="QPushButton" name="coordClear">
-                      <property name="text">
-                       <string>Clear</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="4" column="0">
-                     <widget class="QPushButton" name="pushButton">
-                      <property name="text">
-                       <string>0.125</string>
-                      </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">coordOffsetGroup</string>
-                      </attribute>
-                     </widget>
-                    </item>
-                    <item row="6" column="2">
-                     <widget class="QPushButton" name="pushButton_91">
-                      <property name="text">
-                       <string>Bksp</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="1" rowspan="4" colspan="3">
-                     <widget class="QFrame" name="gridFrame">
-                      <property name="frameShape">
-                       <enum>QFrame::Box</enum>
-                      </property>
-                      <layout class="QGridLayout" name="gridLayout_10">
-                       <property name="leftMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>5</number>
-                       </property>
-                       <item row="2" column="0">
-                        <widget class="QPushButton" name="pushButton_8">
-                         <property name="text">
-                          <string>1</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="1" column="1">
-                        <widget class="QPushButton" name="pushButton_6">
-                         <property name="text">
-                          <string>5</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="1" column="0">
-                        <widget class="QPushButton" name="pushButton_5">
-                         <property name="text">
-                          <string>4</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="0">
-                        <widget class="QPushButton" name="pushButton_11">
-                         <property name="text">
-                          <string>0</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="2" column="1">
-                        <widget class="QPushButton" name="pushButton_9">
-                         <property name="text">
-                          <string>2</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="2" column="2">
-                        <widget class="QPushButton" name="pushButton_10">
-                         <property name="text">
-                          <string>3</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="2">
-                        <widget class="QPushButton" name="pushButton_13">
-                         <property name="text">
-                          <string>-</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="1" column="2">
-                        <widget class="QPushButton" name="pushButton_7">
-                         <property name="text">
-                          <string>6</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QPushButton" name="pushButton_12">
-                         <property name="text">
-                          <string>.</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="QPushButton" name="pushButton_3">
-                         <property name="text">
-                          <string>8</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="0" column="2">
-                        <widget class="QPushButton" name="pushButton_4">
-                         <property name="text">
-                          <string>9</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                       <item row="0" column="0">
-                        <widget class="QPushButton" name="pushButton_2">
-                         <property name="text">
-                          <string>7</string>
-                         </property>
-                         <attribute name="buttonGroup">
-                          <string notr="true">coordOffsetGroup</string>
-                         </attribute>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
                     <item row="5" column="0">
                      <widget class="QPushButton" name="pushButton_41">
                       <property name="text">
@@ -1585,6 +3188,178 @@ X</string>
                       </property>
                      </widget>
                     </item>
+                    <item row="6" column="0">
+                     <widget class="QPushButton" name="pushButton_88">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="3">
+                     <widget class="QPushButton" name="coordClear">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" rowspan="4" colspan="3">
+                     <widget class="QFrame" name="gridFrame">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_10">
+                       <property name="leftMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item row="3" column="1">
+                        <widget class="QPushButton" name="pushButton_12">
+                         <property name="text">
+                          <string>.</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QPushButton" name="pushButton_3">
+                         <property name="text">
+                          <string>8</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QPushButton" name="pushButton_11">
+                         <property name="text">
+                          <string>0</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QPushButton" name="pushButton_7">
+                         <property name="text">
+                          <string>6</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QPushButton" name="pushButton_10">
+                         <property name="text">
+                          <string>3</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QPushButton" name="pushButton_13">
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QPushButton" name="pushButton_6">
+                         <property name="text">
+                          <string>5</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QPushButton" name="pushButton_9">
+                         <property name="text">
+                          <string>2</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QPushButton" name="pushButton_8">
+                         <property name="text">
+                          <string>1</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QPushButton" name="pushButton_4">
+                         <property name="text">
+                          <string>9</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QPushButton" name="pushButton_2">
+                         <property name="text">
+                          <string>7</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QPushButton" name="pushButton_5">
+                         <property name="text">
+                          <string>4</string>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">coordOffsetGroup</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QPushButton" name="pushButton_91">
+                      <property name="text">
+                       <string>Bksp</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QPushButton" name="pushButton_15">
+                      <property name="text">
+                       <string>-0.250</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">coordOffsetGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
                     <item row="0" column="3">
                      <widget class="QLabel" name="cordOffsetLbl">
                       <property name="font">
@@ -1605,6 +3380,33 @@ X</string>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                       </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QPushButton" name="pushButton_90">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="pushButton_14">
+                      <property name="text">
+                       <string>0.250</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">coordOffsetGroup</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>0.125</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">coordOffsetGroup</string>
+                      </attribute>
                      </widget>
                     </item>
                    </layout>
@@ -2053,7 +3855,7 @@ Tool</string>
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_6">
                  <item row="0" column="0">
-                  <widget class="VCPWidget" name="widget_2">
+                  <widget class="VCPWidget" name="widget_2" native="true">
                    <layout class="QGridLayout" name="gridLayout_23">
                     <item row="0" column="0">
                      <widget class="MDIButton" name="mdibutton_15">
@@ -2383,6 +4185,11 @@ Step</string>
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
   </customwidget>
   <customwidget>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
+  </customwidget>
+  <customwidget>
    <class>FileSystemTable</class>
    <extends>QTableView</extends>
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
@@ -2393,20 +4200,9 @@ Step</string>
    <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
   </customwidget>
   <customwidget>
-   <class>VCPWidget</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.containers.widget</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>ProbeSim</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.probesim_widget</header>
-  </customwidget>
-  <customwidget>
-   <class>MDIEntry</class>
-   <extends>QLineEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
   <customwidget>
    <class>ActionButton</class>
@@ -2418,9 +4214,31 @@ Step</string>
    <extends>QLabel</extends>
    <header>qtpyvcp.widgets.display_widgets.status_label</header>
   </customwidget>
+  <customwidget>
+   <class>VCPWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.containers.widget</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections>
+  <connection>
+   <sender>coordClear</sender>
+   <signal>clicked()</signal>
+   <receiver>cordOffsetLbl</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>940</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>855</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
   <connection>
    <sender>viewP</sender>
    <signal>clicked()</signal>
@@ -2486,22 +4304,6 @@ Step</string>
    </hints>
   </connection>
   <connection>
-   <sender>viewIn</sender>
-   <signal>clicked()</signal>
-   <receiver>vtkbackplot</receiver>
-   <slot>zoomIn()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>415</x>
-     <y>618</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>329</x>
-     <y>307</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>viewOut</sender>
    <signal>clicked()</signal>
    <receiver>vtkbackplot</receiver>
@@ -2518,18 +4320,18 @@ Step</string>
    </hints>
   </connection>
   <connection>
-   <sender>coordClear</sender>
+   <sender>viewIn</sender>
    <signal>clicked()</signal>
-   <receiver>cordOffsetLbl</receiver>
-   <slot>clear()</slot>
+   <receiver>vtkbackplot</receiver>
+   <slot>zoomIn()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>940</x>
-     <y>486</y>
+     <x>415</x>
+     <y>618</y>
     </hint>
     <hint type="destinationlabel">
-     <x>855</x>
-     <y>200</y>
+     <x>329</x>
+     <y>307</y>
     </hint>
    </hints>
   </connection>
@@ -2550,6 +4352,22 @@ Step</string>
    </hints>
   </connection>
   <connection>
+   <sender>progLabels</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleProgramLabels()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>machLabels</sender>
    <signal>clicked()</signal>
    <receiver>vtkbackplot</receiver>
@@ -2558,6 +4376,22 @@ Step</string>
     <hint type="sourcelabel">
      <x>880</x>
      <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>progTicks</sender>
+   <signal>clicked()</signal>
+   <receiver>vtkbackplot</receiver>
+   <slot>toggleProgramTicks()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>299</y>
     </hint>
     <hint type="destinationlabel">
      <x>318</x>
@@ -2597,59 +4431,9 @@ Step</string>
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>progLabels</sender>
-   <signal>clicked()</signal>
-   <receiver>vtkbackplot</receiver>
-   <slot>toggleProgramLabels()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>720</x>
-     <y>379</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>318</x>
-     <y>281</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>progTicks</sender>
-   <signal>clicked()</signal>
-   <receiver>vtkbackplot</receiver>
-   <slot>toggleProgramTicks()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>720</x>
-     <y>299</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>318</x>
-     <y>281</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>mdiSmartSendBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>mdiSmartEntry</receiver>
-   <slot>submit()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>487</x>
-     <y>489</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>131</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="coordOffsetGroup"/>
-  <buttongroup name="mdiSmartButtonGroup"/>
-  <buttongroup name="mdiButtonGroup"/>
   <buttongroup name="toolButtonGroup"/>
+  <buttongroup name="coordOffsetGroup"/>
  </buttongroups>
 </ui>
