@@ -2044,7 +2044,7 @@ Y</string>
 X Y Z</string>
                          </property>
                          <property name="MDICommand" stdset="0">
-                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;</string>
+                          <string>G10L20P0X#&lt;cordOffsetLbl&gt;Y#&lt;cordOffsetLbl&gt;Z#&lt;cordOffsetLbl&gt;</string>
                          </property>
                         </widget>
                        </item>
