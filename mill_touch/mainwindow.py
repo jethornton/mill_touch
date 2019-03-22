@@ -21,12 +21,10 @@ class MyMainWindow(VCPMainWindow):
         self.gcodeHelpBtn.clicked.connect(self.tabForward)
         self.mdiBackBtn.clicked.connect(self.tabBack)
 
-
     def tabForward(parent):
         parent.mdiStackedWidget.setCurrentIndex(parent.mdiStackedWidget.currentIndex() + 1)
     def tabBack(parent):
         parent.mdiStackedWidget.setCurrentIndex(parent.mdiStackedWidget.currentIndex() - 1)
-
 
     def mdiSmartHandleKeys(self, button):
         char = str(button.text())
