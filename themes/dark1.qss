@@ -25,6 +25,8 @@ rgb(255, 255, 255) = white
 
 */
 
+/* Start of QtPyVcP specific styles */
+
 FileSystemTable {
     background-color: rgb(32, 32, 32);
     alternate-background-color: rgb(44, 44, 44);
@@ -38,6 +40,50 @@ StatusLabel[borderStyle="solid"]{
     padding: 4px;
     border-color: #76797c;
 }
+
+ActionButton{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    color: #eff0f1;
+    background-color: qlineargradient(x1: 0.5, y1: 0.5 x2: 0.5, y2: 1, stop: 0 #3b4045, stop: 0.5 #31363b);
+    border-color: #76797c;
+}
+
+ActionButton:disabled{
+    border-color: #454545;
+}
+
+ActionButton[actionName="machine.estop.toggle"]:on{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: red;
+    padding: 4px;
+}
+
+ActionButton[actionName="machine.power.toggle"]:checked{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: green;
+    padding: 4px;
+}
+
+MDIButton{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    border-color: #76797c;
+}
+
+MDIButton:disabled{
+    border-color: #454545;
+}
+
+/* End of QtPyVcP specific styles */
 
 QWidget {
     background-color:rgb(0, 0, 0);
@@ -68,6 +114,7 @@ QTabBar::tab {
     border-style: solid;
     color: rgb(160, 160, 160);
     padding: 4px;
+    border-radius: 5px;
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover {
@@ -107,6 +154,7 @@ QPushButton{
     color: rgb(255, 255, 255);
     padding: 6px;
     background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(77, 77, 77, 255), stop:1 rgba(97, 97, 97, 255));
+    border-radius: 5px;
 }
 
 QPushButton:hover{
