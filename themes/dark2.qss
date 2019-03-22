@@ -2,6 +2,8 @@
  *  dark stylesheet.
  */
 
+/* Start of QtPyVcP specific styles */
+
 StatusLabel[borderStyle="solid"]{
     border-style: solid;
     border-width: 2px;
@@ -63,6 +65,8 @@ MDIButton{
 MDIButton:disabled{
     border-color: #454545;
 }
+
+/* End of QtPyVcP specific styles */
 
 QToolTip
 {
@@ -980,7 +984,7 @@ QTabBar::tab:top:!selected:first:hover
 }
 
 /* BOTTOM TABS */
-
+/*
 QTabBar::tab:bottom
 {
     color: #eff0f1;
@@ -1040,7 +1044,7 @@ QTabBar::tab:bottom:!selected:first:hover
     background-color: rgba(61, 173, 232, 0.2);
     border: 0.1ex rgba(61, 173, 232, 0.2);
 }
-
+*/
 /* LEFT TABS */
 QTabBar::tab:left
 {

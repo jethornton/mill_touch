@@ -1589,7 +1589,7 @@ Parameters</string>
                   </widget>
                  </item>
                  <item row="0" column="0" colspan="4">
-                  <widget class="FileSystemTable" name="filesystemtable_2">
+                  <widget class="FileSystemTable" name="filesystemtable">
                    <property name="hiddenColumns" stdset="0">
                     <string>1,2</string>
                    </property>
@@ -3355,6 +3355,70 @@ Step</string>
     <hint type="destinationlabel">
      <x>316</x>
      <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navDown</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navUp</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navParent</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>281</y>
     </hint>
    </hints>
   </connection>
