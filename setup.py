@@ -23,7 +23,7 @@ data_files = (data_files_from_dirs(DATA_DIRS))
 
 setup(
     name="mill_touch",
-    version="0.0.1",
+    version="0.1.0",
     author="John Doe",
     author_email="<doe.john@example.com>",
     description="mill_touch - A QtPyVCP based Virtual Control Panel for LinuxCNC",
