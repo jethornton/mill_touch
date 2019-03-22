@@ -36,7 +36,8 @@ class MyMainWindow(VCPMainWindow):
             words = helptext.gcode_words()
             if text in words:
                 self.mdiSmartClear()
-                for index, value in enumerate(words[text]):
+                print(type(words[text]))
+                for index, value in enumerate(words[text], start=1):
                     getattr(self, 'gcodeParameter_' + str(index)).setText(value)
             else:
                 self.mdiSmartClear()
@@ -50,7 +51,7 @@ class MyMainWindow(VCPMainWindow):
             self.mdiSmartClear()
 
     def mdiSmartClear(self):
-        for index in range(12):
+        for index in range(1,13):
             getattr(self, 'gcodeParameter_' + str(index)).setText('')
         self.gcodeDescription.setText('')
         self.gcodeHelpLabel.setText('')

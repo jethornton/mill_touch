@@ -144,13 +144,13 @@ def gcode_descriptions(gcode):
         'G5':G5,
         'G5.1':G5_1,
         'G5.2':'NURBS, add control point',
-        'G7':'Diameter Mode (lathe)',
-        'G8':'Radius Mode (lathe)',
-        'G10L1':'Set Tool Table Entry',
-        'G10L2':'Set Tool Table, Calculated, Workpiece',
-        'G10L10':'Set Tool Table, Calculated, Fixture',
-        'G10L11':'Coordinate System Origin Setting',
-        'G10L20':'Coordinate System Origin Setting Calculated',
+        'G7':G7,
+        'G8':G8,
+        'G10L1':G10L1,
+        'G10L2':G10L2,
+        'G10L10':G10L10,
+        'G10L11':G10L11,
+        'G10L20':G10L20,
         'G17':'Plane Select XY',
         'G18':'Plane Select XZ',
         'G19':'Plane Select YZ',
@@ -268,6 +268,67 @@ G5 creates a cubic B-spline in the XY plane with the X and Y axes only.
 P and Q must both be specified for every G5 command.
 """
 
-G5_1 = """ Quadratic Spline
+G5_1 = """G5.1 X Y I J
+Quadratic Spline
+I - X incremental offset from start point to control point
+J - Y incremental offset from start point to control point
+G5.1 creates a quadratic B-spline in the XY plane with the X and Y axis only.
+Not specifying I or J gives zero offset for the unspecified axis, so one or
+both must be given.
 """
 
+G7 = """G7 Lathe Diameter Mode
+"""
+
+G8 = """G8 Lathe Radius Mode
+"""
+
+G10L1 = """G10 L1 P axes <R I J Q>
+Set Tool Table
+P = tool number
+R = radius of tool
+I = front angle (lathe)
+J = back angle (lathe)
+Q = orientation (lathe)
+G10 L1 sets the tool table for the P tool number to the values of the words.
+"""
+
+G10L2 = """G10 L2 P <axes R>
+P = coordinate system (0-9)
+R = rotation about the Z axis
+G10 L2 offsets the origin of the axes in the coordinate system specified
+to the value of the axis word.
+"""
+
+G10L10 = """G10 L10 P axes <R I J Q>
+P =- tool number
+R = radius of tool
+I = front angle (lathe)
+J = back angle (lathe)
+Q = orientation (lathe)
+G10 L10 changes the tool table entry for tool P so that if the tool offset is
+reloaded, with the machine in its current position and with the current G5x and
+G52/G92 offsets active, the current coordinates for the given axes will become
+the given values.
+"""
+
+G10L11 = """G10 L11 P axes <R I J Q>
+P = tool number
+R = radius of tool
+I = front angle (lathe)
+J = back angle (lathe)
+Q = orientation (lathe)
+G10 L11 is just like G10 L10 except that instead of setting the entry according
+to the current offsets, it is set so that the current coordinates would become
+the given value if the new tool offset is reloaded and the machine is placed in
+the G59.3 coordinate system without any G52/G92 offset active.
+"""
+
+G10L20 = """
+"""
+
+G17 = """
+"""
+
+G18 = """
+"""

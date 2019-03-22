@@ -121,7 +121,7 @@ width: 100px;
              <enum>QTabWidget::South</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="tab">
              <attribute name="title">
@@ -234,7 +234,7 @@ width: 100px;
                     </property>
                     <layout class="QGridLayout" name="gridLayout_14">
                      <item row="0" column="0">
-                      <widget class="QLabel" name="gcodeDescription_3">
+                      <widget class="QLabel" name="gcodeDescription">
                        <property name="font">
                         <font>
                          <family>DejaVu Sans</family>
@@ -256,7 +256,7 @@ width: 100px;
                       </widget>
                      </item>
                      <item row="1" column="0">
-                      <widget class="MDIEntry" name="mdiSmartEntry_3">
+                      <widget class="MDIEntry" name="mdiSmartEntry">
                        <property name="font">
                         <font>
                          <family>DejaVu Sans</family>
@@ -323,7 +323,7 @@ width: 100px;
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_48">
+                                  <widget class="QPushButton" name="gcodeParameter_1">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -351,10 +351,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_49">
+                                  <widget class="QPushButton" name="gcodeParameter_2">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -382,10 +385,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_50">
+                                  <widget class="QPushButton" name="gcodeParameter_3">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -413,6 +419,9 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -434,7 +443,7 @@ width: 100px;
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_51">
+                                  <widget class="QPushButton" name="gcodeParameter_4">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -462,10 +471,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_52">
+                                  <widget class="QPushButton" name="gcodeParameter_5">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -493,10 +505,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_53">
+                                  <widget class="QPushButton" name="gcodeParameter_6">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -524,6 +539,9 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -545,7 +563,7 @@ width: 100px;
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_54">
+                                  <widget class="QPushButton" name="gcodeParameter_7">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -573,10 +591,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_55">
+                                  <widget class="QPushButton" name="gcodeParameter_8">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -604,10 +625,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_56">
+                                  <widget class="QPushButton" name="gcodeParameter_9">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -635,6 +659,9 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -656,7 +683,7 @@ width: 100px;
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_57">
+                                  <widget class="QPushButton" name="gcodeParameter_10">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -684,10 +711,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_58">
+                                  <widget class="QPushButton" name="gcodeParameter_11">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -715,10 +745,13 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="gcodeParameter_59">
+                                  <widget class="QPushButton" name="gcodeParameter_12">
                                    <property name="sizePolicy">
                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                                      <horstretch>0</horstretch>
@@ -746,6 +779,9 @@ width: 100px;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -807,6 +843,9 @@ width: 100px;
                                    <property name="text">
                                     <string>7</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -838,6 +877,9 @@ width: 100px;
                                    <property name="text">
                                     <string>8</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -869,6 +911,9 @@ width: 100px;
                                    <property name="text">
                                     <string>9</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -918,6 +963,9 @@ width: 100px;
                                    <property name="text">
                                     <string>4</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -949,6 +997,9 @@ width: 100px;
                                    <property name="text">
                                     <string>5</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -980,6 +1031,9 @@ width: 100px;
                                    <property name="text">
                                     <string>6</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -1029,6 +1083,9 @@ width: 100px;
                                    <property name="text">
                                     <string>1</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -1060,6 +1117,9 @@ width: 100px;
                                    <property name="text">
                                     <string>2</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -1091,6 +1151,9 @@ width: 100px;
                                    <property name="text">
                                     <string>3</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -1140,6 +1203,9 @@ width: 100px;
                                    <property name="text">
                                     <string>0</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -1171,6 +1237,9 @@ width: 100px;
                                    <property name="text">
                                     <string>-</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                  <item>
@@ -1202,6 +1271,9 @@ width: 100px;
                                    <property name="text">
                                     <string>.</string>
                                    </property>
+                                   <attribute name="buttonGroup">
+                                    <string notr="true">mdiSmartButtonGroup</string>
+                                   </attribute>
                                   </widget>
                                  </item>
                                 </layout>
@@ -1251,6 +1323,9 @@ width: 100px;
                              <property name="text">
                               <string>G</string>
                              </property>
+                             <attribute name="buttonGroup">
+                              <string notr="true">mdiSmartButtonGroup</string>
+                             </attribute>
                             </widget>
                            </item>
                            <item>
@@ -1270,6 +1345,9 @@ width: 100px;
                              <property name="text">
                               <string>M</string>
                              </property>
+                             <attribute name="buttonGroup">
+                              <string notr="true">mdiSmartButtonGroup</string>
+                             </attribute>
                             </widget>
                            </item>
                            <item>
@@ -1289,6 +1367,9 @@ width: 100px;
                              <property name="text">
                               <string>T</string>
                              </property>
+                             <attribute name="buttonGroup">
+                              <string notr="true">mdiSmartButtonGroup</string>
+                             </attribute>
                             </widget>
                            </item>
                            <item>
@@ -1308,6 +1389,9 @@ width: 100px;
                              <property name="text">
                               <string>F</string>
                              </property>
+                             <attribute name="buttonGroup">
+                              <string notr="true">mdiSmartButtonGroup</string>
+                             </attribute>
                             </widget>
                            </item>
                            <item>
@@ -1327,10 +1411,13 @@ width: 100px;
                              <property name="text">
                               <string>S</string>
                              </property>
+                             <attribute name="buttonGroup">
+                              <string notr="true">mdiSmartButtonGroup</string>
+                             </attribute>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="mdiSmartBackspace_3">
+                            <widget class="QPushButton" name="mdiSmartBackspace">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -1386,7 +1473,7 @@ width: 100px;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="mdiLoadParameters_3">
+                            <widget class="QPushButton" name="mdiLoadParameters">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -1406,7 +1493,7 @@ Parameters</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="mdiSmartSendBtn_3">
+                            <widget class="QPushButton" name="mdiSendBtn">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -1431,9 +1518,6 @@ Parameters</string>
                       </widget>
                      </item>
                     </layout>
-                    <zorder>gcodeDescription_3</zorder>
-                    <zorder>mdiSmartEntry_3</zorder>
-                    <zorder>gridFrame_6</zorder>
                    </widget>
                   </item>
                  </layout>
@@ -1469,8 +1553,6 @@ Parameters</string>
                    </widget>
                   </item>
                  </layout>
-                 <zorder>gcodeHelpLabel</zorder>
-                 <zorder>mdiSmartEntry_4</zorder>
                 </widget>
                </widget>
               </item>
@@ -1500,7 +1582,7 @@ Parameters</string>
                   <number>5</number>
                  </property>
                  <item row="1" column="3">
-                  <widget class="QPushButton" name="navOpen_2">
+                  <widget class="QPushButton" name="navOpen">
                    <property name="text">
                     <string>Open</string>
                    </property>
@@ -1526,21 +1608,21 @@ Parameters</string>
                   </widget>
                  </item>
                  <item row="1" column="2">
-                  <widget class="QPushButton" name="navDown_2">
+                  <widget class="QPushButton" name="navDown">
                    <property name="text">
                     <string>Down</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QPushButton" name="navParent_2">
+                  <widget class="QPushButton" name="navParent">
                    <property name="text">
                     <string>../</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QPushButton" name="navUp_2">
+                  <widget class="QPushButton" name="navUp">
                    <property name="text">
                     <string>Up</string>
                    </property>
@@ -3260,9 +3342,26 @@ Step</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>mdiSendBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>mdiSmartEntry</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>488</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="toolButtonGroup"/>
   <buttongroup name="coordOffsetGroup"/>
+  <buttongroup name="toolButtonGroup"/>
+  <buttongroup name="mdiSmartButtonGroup"/>
  </buttongroups>
 </ui>
