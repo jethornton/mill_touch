@@ -19,7 +19,7 @@ def data_files_from_dirs(data_dirs):
 
     return data_files
 
-data_files.extend(data_files_from_dirs(DATA_DIRS))
+data_files = (data_files_from_dirs(DATA_DIRS))
 
 setup(
     name="mill_touch",
@@ -32,6 +32,7 @@ setup(
     url="https://github.com/USERNAME/REPO",
     download_url="https://github.com/USERNAME/REPO/tarball/master",
     packages=find_packages(),
+    data_files=data_files,
     include_package_data=True,
     entry_points={
         'gui_scripts': [
