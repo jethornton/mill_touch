@@ -216,7 +216,7 @@ width: 0px;
                 <property name="currentIndex">
                  <number>0</number>
                 </property>
-                <widget class="QWidget" name="mdiStackedWidgetPage1" native="true">
+                <widget class="QWidget" name="mdiStackedWidgetPage1">
                  <layout class="QVBoxLayout" name="verticalLayout_6">
                   <item>
                    <widget class="VCPWidget" name="mdiStackedWidget_2">
@@ -1519,7 +1519,7 @@ Parameters</string>
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="mdiStackedWidgetPage2" native="true">
+                <widget class="QWidget" name="mdiStackedWidgetPage2">
                  <layout class="QGridLayout" name="gridLayout_32">
                   <item row="0" column="0">
                    <widget class="QLabel" name="gcodeHelpLabel">
@@ -3426,10 +3426,26 @@ Step</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>mdiSendBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>mdiSmartEntry</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="coordOffsetGroup"/>
   <buttongroup name="toolButtonGroup"/>
   <buttongroup name="mdiSmartButtonGroup"/>
+  <buttongroup name="coordOffsetGroup"/>
  </buttongroups>
 </ui>
