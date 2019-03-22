@@ -196,7 +196,10 @@ width: 100px;
              </attribute>
              <layout class="QGridLayout" name="gridLayout_28">
               <item row="0" column="0">
-               <widget class="QTabWidget" name="tabWidget_3">
+               <widget class="QStackedWidget" name="mdiStackedWidget">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                   <horstretch>0</horstretch>
@@ -205,24 +208,18 @@ width: 100px;
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QTabBar::tab {
-height: 50px;
-width: 100px;
+height: 1px;
+width: 0px;
 }
 </string>
-                </property>
-                <property name="tabPosition">
-                 <enum>QTabWidget::South</enum>
                 </property>
                 <property name="currentIndex">
                  <number>0</number>
                 </property>
-                <widget class="QWidget" name="tab_11">
-                 <attribute name="title">
-                  <string>MDI</string>
-                 </attribute>
+                <widget class="QWidget" name="mdiStackedWidgetPage1" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_6">
                   <item>
-                   <widget class="VCPWidget" name="widget_8">
+                   <widget class="VCPWidget" name="mdiStackedWidget_2">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                       <horstretch>0</horstretch>
@@ -1454,7 +1451,7 @@ width: 100px;
                             <number>0</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="pushButton_124">
+                            <widget class="QPushButton" name="gcodeHelpBtn">
                              <property name="sizePolicy">
                               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                                <horstretch>0</horstretch>
@@ -1522,10 +1519,7 @@ Parameters</string>
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="tab_13">
-                 <attribute name="title">
-                  <string>G code Help</string>
-                 </attribute>
+                <widget class="QWidget" name="mdiStackedWidgetPage2" native="true">
                  <layout class="QGridLayout" name="gridLayout_32">
                   <item row="0" column="0">
                    <widget class="QLabel" name="gcodeHelpLabel">
@@ -1549,6 +1543,13 @@ Parameters</string>
                     </property>
                     <property name="borderStyle" stdset="0">
                      <string>solid</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="mdiBackBtn">
+                    <property name="text">
+                     <string>Back</string>
                     </property>
                    </widget>
                   </item>
@@ -1629,6 +1630,25 @@ Parameters</string>
                   </widget>
                  </item>
                 </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Page</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="stackedWidget">
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="page"/>
+                <widget class="QWidget" name="page_2"/>
                </widget>
               </item>
              </layout>
@@ -3339,22 +3359,6 @@ Step</string>
     <hint type="destinationlabel">
      <x>318</x>
      <y>281</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>mdiSendBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>mdiSmartEntry</receiver>
-   <slot>submit()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>488</x>
-     <y>488</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>92</y>
     </hint>
    </hints>
   </connection>
