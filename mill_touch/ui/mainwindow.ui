@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -22,8 +22,11 @@
     <height>768</height>
    </size>
   </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string/>
   </property>
   <property name="styleSheet">
    <string notr="true">QTabBar::tab {
@@ -1656,6 +1659,9 @@ Parameters</string>
              <layout class="QGridLayout" name="gridLayout_3">
               <item row="0" column="0">
                <widget class="QStackedWidget" name="stackedWidget">
+                <property name="styleSheet">
+                 <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::Box</enum>
                 </property>
@@ -3459,8 +3465,8 @@ Step</string>
   </connection>
  </connections>
  <buttongroups>
+  <buttongroup name="coordOffsetGroup"/>
   <buttongroup name="mdiSmartButtonGroup"/>
   <buttongroup name="toolButtonGroup"/>
-  <buttongroup name="coordOffsetGroup"/>
  </buttongroups>
 </ui>
