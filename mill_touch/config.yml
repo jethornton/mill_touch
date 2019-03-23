@@ -40,12 +40,12 @@ windows:
       # Specify the UI file to load the window layout from.
       ui_file: {{ file.dir }}/ui/mainwindow.ui
       # Specify a stylesheet to use only for mainwindow.
-      stylesheet: null
+      stylesheet: Null
       # Set the window title from from the date in the vcp section above.
-      title: ( vcp.name ) ( vcp.version)
+      title: Null
 
 application:
   kwargs:
     # Specify the application wide stylesheet.
-    stylesheet: {{ file.dir }}/ui/style.qss
+    # stylesheet: {{ file.dir }}/ui/style.qss
     # stylesheet: {{ file.dir }}/ui/dark.qss
