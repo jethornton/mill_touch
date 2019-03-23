@@ -1,1 +1,1 @@
-graft *
+recursive-include *.yml *.yaml *.ui *.qss *qrc
