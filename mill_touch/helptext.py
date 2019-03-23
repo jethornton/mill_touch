@@ -554,7 +554,7 @@ H = tool number (optional)
 G43 enables tool length compensation. G43 changes subsequent
 motions by offsetting the axis coordinates by the length of the
 offset. G43 does not cause any motion. The next time a
-compensated axis is moved, that axis’s endpoint is the
+compensated axis is moved, that axis's endpoint is the
 compensated location.
 
 G43 without an H word uses the currently loaded tool from the
@@ -568,7 +568,7 @@ G43.1 axes
 
 G43.1 axes - change subsequent motions by replacing the current
 offset(s) of axes. G43.1 does not cause any motion. The next
-time a compensated axis is moved, that axis’s endpoint is the
+time a compensated axis is moved, that axis's endpoint is the
 compensated location.
 """
 
@@ -584,56 +584,118 @@ numbers are geometry offsets and which are wear offsets, or that
 you should have only one of each.
 
 Like the other G43 commands, G43.2 does not cause any motion.
-The next time a compensated axis is moved, that axis’s endpoint
+The next time a compensated axis is moved, that axis's endpoint
 is the compensated location.
 """
 
-G49 = """
+G49 = """G49 Cancel Tool Length Compensation
 """
 
-G52 = """
+G52 = """G52 Local Coordinate System Offset
+G53 axes
+
+G52 is used in a part program as a temporary "local coordinate
+system offset" within the workpiece coordinate system.
 """
 
-G53 = """
+G53 = """G53 Move in Machine Coordinates
+G53 axes
+
+To move in the machine coordinate system, program G53 on the
+same line as a linear move. G53 is not modal and must be
+programmed on each line. G0 or G1 does not have to be
+programmed on the same line if one is currently active.
 """
 
-G54 = """
+G54 = """G54 Select Coordinate System
+G54 = select coordinate system 1
 """
 
-G55 = """
+G55 = """G55 Select Coordinate System
+G55 = select coordinate system 2
 """
 
-G56 = """
+G56 = """G56 Select Coordinate System
+G56 = select coordinate system 3
 """
 
-G57 = """
+G57 = """G57 Select Coordinate System
+G57 = select coordinate system 4
 """
 
-G58 = """
+G58 = """G58 Select Coordinate System
+G58 = select coordinate system 5
 """
 
-G59 = """
+G59 = """G59 Select Coordinate System
+G59 = select coordinate system 6
 """
 
-G59_1 = """
+G59_1 = """G59.1 Select Coordinate System
+G59.1 = select coordinate system 7
 """
 
-G59_2 = """
+G59_2 = """G59.2 Select Coordinate System
+G59.2 = select coordinate system 8
 """
 
-G59_3 = """
+G59_3 = """G59.3 Select Coordinate System
+G59.3 = select coordinate system 9
 """
 
-G61 = """
+G61 = """G61 Exact Path Mode
+G61 = Exact path mode, movement exactly as programed. Moves
+will slow or stop as needed to reach every programed point.
+If two sequential moves are exactly co-linear movement will
+not stop.
 """
 
-G61_1 = """
+G61_1 = """G61.1 Exact Stop Mode
+G61.1 - Exact stop mode, movement will stop at the end of each
+programed segment.
 """
 
-G64 = """
+G64 = """G64 Path Blending
+G64 P Q
+P = motion blending tolerance
+Q = naive cam tolerance
+
+G64 - without P means to keep the best speed possible, no
+matter how far away from the programmed point you end up.
+
+The P tolerance means that the actual path will be no more
+than P away from the programmed endpoint. The velocity will be
+reduced if needed to maintain the path.
+
+G64 P- Q- turns on the naive cam detector. When there are a
+series of linear XYZ feed moves at the same feed rate that are
+less than Q away from being collinear, they are collapsed into
+a single linear move.
 """
 
-G73 = """
+G73 = """G73 Drilling Cycle with Chip Breaking
+G73 X Y Z R Q L
+R = retract position along the Z axis
+Q = delta increment along the Z axis
+L = repeat
+
+The G73 cycle is drilling or milling with chip breaking. This
+cycle takes a Q number which represents a delta increment
+along the Z axis.
+
+If the current Z position is below the R position, The Z axis
+does a rapid move to the R position.
+
+Move to the X Y coordinates.
+
+Move the Z-axis only at the current feed rate downward by delta
+or to the Z position, whichever is less deep.
+
+Rapid up a bit.
+
+Repeat steps 2 and 3 until the Z position is reached at step 2.
+
+The Z axis does a rapid move to the R position.
 """
 
 G74 = """
