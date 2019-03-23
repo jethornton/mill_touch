@@ -741,69 +741,151 @@ G80 = """Cancel Canned Cycle
 """
 
 G81 = """G81 Drilling Cycle
+G81 X Y Z or (U V W) R L
+
+R = retract position along the Z axis
+L = repeat
 """
 
-G82 = """
+G82 = """G82 Drilling Cycle, Dwell
+G82 X Y Z or (U V W) R L P
+
+R = retract position along the Z axis
+L = repeat
+P = dwell
 """
 
-G83 = """
+G83 = """G83 Peck Drilling Cycle
+G83 X Y Z or (U V W) R L Q
+
+R = retract position along the Z axis
+L = repeat
+Q = delta increment along the Z axis
 """
 
-G84 = """
+G84 = """G84 Right-hand Tapping Cycle, Dwell
+G84 X Y Z or (U V W) R L P $
+
+R = retract position along the Z axis
+L = repeat
+P = dwell
+$ = spindle
 """
 
-G85 = """
+G85 = """G85 Boring Cycle, Feed Out
+G85 X Y Z or (U V W) R L
+
+R = retract position along the Z axis
+L = repeat
 """
 
-G86 = """
+G86 = """G86 Boring Cycle, Spindle Stop, Rapid Move Out
+G84 X Y Z or (U V W) R L P $
+
+R = retract position along the Z axis
+L = repeat
+P = dwell
+$ = spindle
 """
 
-G89 = """
+G89 = """G89 Boring Cycle, Dwell, Feed Out
+G89 X Y Z or (U V W) R L P
+
+R = retract position along the Z axis
+L = repeat
+P = dwell
 """
 
-G90 = """
+G90 = """G90 Absolute Distance Mode
+In absolute distance mode, axis numbers
+(X, Y, Z, A, B, C, U, V, W) usually represent
+positions in terms of the currently active
+coordinate system.
 """
 
-G90_1 = """
+G90_1 = """G90.1 Absolute Distance Mode
+for I, J & K offsets
 """
 
-G91 = """
+G91 = """G91 Incremental Distance Mode
+In incremental distance mode axis numbers usually
+represent increments from the current coordinate.
 """
 
-G91_1 = """
+G91_1 = """G91.1 Incremental Distance Mode
+for I, J & K offsets
 """
 
-G92 = """
+G92 = """G92 Coordinate System Offset
+G92 axes
+
+G92 makes the current point have the coordinates you want
+(without motion), where the axis words contain the axis
+numbers you want. All axis words are optional, except
+that at least one must be used. If an axis word is not
+used for a given axis, the offset for that axis will be zero.
 """
 
-G92_1 = """
+G92_1 = """G92.1 Turn Off G92, Reset
+G92.1 turns off G92 offsets and resets
+parameters 5211 - 5219 to zero.
 """
 
-G92_2 = """
+G92_2 = """G92.2 Turn Off G92
+G92.2 turns off G92 offsets and does not
+change parameters 5211 - 5219.
 """
 
-G92_3 = """
+G92_3 = """G92.3 Restore G92 Offsets
+G92.3 sets the G92 offset to the values
+saved in parameters 5211 to 5219.
 """
 
-G93 = """
+G93 = """G93 Inverse Time Feed Mode
+G93 inverse time feed rate mode, an F word means the move
+should be completed in [one divided by the F number] minutes.
+
+When the inverse time feed rate mode is active, an F word
+must appear on every line which has a G1, G2, or G3 motion,
+and an F word on a line that does not have G1, G2, or G3
+is ignored.
 """
 
-G94 = """
+G94 = """G94 Units per Minute Feed Mode
+G94 units per minute feed mode, an F word is interpreted
+to mean the controlled point should move at a certain
+number of inches per minute, millimeters per minute, or
+degrees per minute, depending upon what length units are
+being used and which axis or axes are moving.
 """
 
-G95 = """
+G95 = """G95 Units per Revolution Feed Mode
+G95 units per revolution mode, an F word is interpreted
+to mean the controlled point should move a certain number
+of inches per revolution of the spindle, depending on what
+length units are being used and which axis or axes are moving.
 """
 
-G96 = """
+G96 = """G96 Spindle Constant Surface Speed Mode
+G96 D S $
+D = maximum spindle RPM
+S = surface speed
+$ = spindle
 """
 
-G97 = """
+G97 = """G97 Spindle RPM Mode
+G97 selects RPM mode.
 """
 
-G98 = """
+G98 = """G98 Canned Cycle Return Level
+G98 - retract to the position that axis was in just
+before this series of one or more contiguous canned
+cycles was started.
 """
 
-G99 = """
+G99 = """G99 Canned Cycle Return Level
+G99 - retract to the position specified
+by the R word of the canned cycle.
 """
 
 
