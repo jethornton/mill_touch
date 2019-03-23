@@ -683,6 +683,8 @@ The G73 cycle is drilling or milling with chip breaking. This
 cycle takes a Q number which represents a delta increment
 along the Z axis.
 
+Motion Sequence
+
 If the current Z position is below the R position, The Z axis
 does a rapid move to the R position.
 
@@ -698,16 +700,47 @@ Repeat steps 2 and 3 until the Z position is reached at step 2.
 The Z axis does a rapid move to the R position.
 """
 
-G74 = """
+G74 = """G74 Left-hand Tapping Cycle, Dwell
+G74 (X Y Z) or (U V W) R L P $
+R = retract position along the Z axis
+L = repeat
+P = dwell
+$ = spindle
+
+The G74 cycle is for tapping with floating chuck and dwell at
+the bottom of the hole.
 """
 
-G76 = """
+G76 = """Lathe Threading Cycle
+G76 P Z I J R K Q H E L $
+P = The thread pitch in distance per revolution.
+Z = The final position of threads.
+I = The thread peak offset from the drive line.
+J = A positive value specifying the initial cut depth.
+K = A positive value specifying the full thread depth.
+
+Optional settings
+$ = The spindle number to which the motion will be synchronised.
+R = The depth degression. R1.0 selects constant depth on
+successive threading passes.
+Q = The compound slide angle is the angle (in degrees)
+    describing to what extent successive passes should
+    be offset along the drive line.
+H = The number of spring passes.
+E = Specifies the distance along the drive line used
+    for the taper.
+L = Specifies which ends of the thread get the taper.
+    L0 for no taper (the default)
+    L1 for entry taper
+    L2 for exit taper
+    L3 for both entry and exit tapers
+    
 """
 
-G80 = """
+G80 = """Cancel Canned Cycle
 """
 
-G81 = """
+G81 = """G81 Drilling Cycle
 """
 
 G82 = """
