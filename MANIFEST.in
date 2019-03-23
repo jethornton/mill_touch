@@ -1,1 +1,1 @@
-recursive-include *.yml *.yaml *.ui *.qss *qrc
+recursive-include mill_touch *.yml *.yaml *.ui *.qss *qrc
