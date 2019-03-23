@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 DATA_DIRS = [
-    ('~/linuxcnc/configs/', 'configs'),
+    ('~/linuxcnc/configs/mill_touch_sim', 'configs/mill_touch_sim'),
     ]
 
 def data_files_from_dirs(data_dirs):
