@@ -230,6 +230,31 @@ width: 0px;
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                     </property>
                     <layout class="QGridLayout" name="gridLayout_14">
+                     <item row="1" column="0">
+                      <widget class="QFrame" name="frame">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <property name="lineWidth">
+                        <number>2</number>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_5">
+                        <item row="0" column="0">
+                         <widget class="MDIEntry" name="mdiSmartEntry">
+                          <property name="font">
+                           <font>
+                            <family>DejaVu Sans</family>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
                      <item row="0" column="0">
                       <widget class="QLabel" name="gcodeDescription">
                        <property name="font">
@@ -249,16 +274,6 @@ width: 0px;
                        </property>
                        <property name="text">
                         <string/>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="MDIEntry" name="mdiSmartEntry">
-                       <property name="font">
-                        <font>
-                         <family>DejaVu Sans</family>
-                         <pointsize>12</pointsize>
-                        </font>
                        </property>
                       </widget>
                      </item>
@@ -3444,8 +3459,8 @@ Step</string>
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="toolButtonGroup"/>
   <buttongroup name="mdiSmartButtonGroup"/>
+  <buttongroup name="toolButtonGroup"/>
   <buttongroup name="coordOffsetGroup"/>
  </buttongroups>
 </ui>
