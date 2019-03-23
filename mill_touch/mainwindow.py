@@ -1,4 +1,5 @@
 from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
+#import QtCore
 
 # Setup logging
 from qtpyvcp.utilities import logger
@@ -7,10 +8,21 @@ LOG = logger.getLogger('qtpyvcp.' + __name__)
 # Setup Help Text
 import mill_touch.helptext as helptext
 
+# Hide Window Title Bar
+from PyQt5 import QtCore
+
 class MyMainWindow(VCPMainWindow):
     """Main window class for the VCP."""
     def __init__(self, *args, **kwargs):
         super(MyMainWindow, self).__init__(*args, **kwargs)
+        #self.setTitleBarWidget(QtGui.QWidget(None))
+        #self.setWindowFlags(QtCore.Qt.CustomizeWindowHint)
+        self.setWindowFlags(
+            QtCore.Qt.Window |
+            QtCore.Qt.CustomizeWindowHint |
+            QtCore.Qt.WindowStaysOnTopHint
+            )
+
 
         self.coordOffsetGroup.buttonClicked.connect(self.offsetHandleKeys)
         self.toolButtonGroup.buttonClicked.connect(self.toolHandleKeys)
