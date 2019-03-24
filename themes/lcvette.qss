@@ -1,5 +1,8 @@
 QMainWindow {
-    background: rgb(232, 231, 240);
+    background: black
+    /*border-image: url(:/images/dark_background.jpg);*/
+    /*background-image: url(:/images/dark_background.jpg);*/
+    /*background-image: url(:/images/pp_border.png);*/
 }
 
 QsciScintilla {
@@ -8,28 +11,28 @@ QsciScintilla {
 }
 
 QStatusBar {
-    color: silver;
+    color: white;
     font-family: "Bebas Kai";
     font-size: 12pt;
 }
 
 QPushButton, QComboBox[editable="false"],
 QComboBox[editable="true"]::drop-down {
-    color: silver;
+    color: white;
     border-style: solid;
     border-width: 1px;
-    border-radius: 4px;
-    border-color: silver;
-    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(46, 52, 54, 255), stop:1 rgba(76, 82, 84, 255));
+    border-radius: 3px;
+    border-color: dark gray;
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(97, 97, 97, 255), stop:1 rgba(117, 117, 117, 255));
 }
 
 QPushButton {
     font-family: "Bebas Kai";
-    font-size: 12pt;
+    font-size: 15pt;
 }
 
 QPushButton:disabled {
-    border-color: silver;
+    border-color: gray;
 }
 
 /*QPushButton[error="true"] {
@@ -82,7 +85,7 @@ QLineEdit {
     border-width: 2px;
     border-radius: 5px;
     color: black;
-    background: silver;
+    background: white;
 }
 
 QLineEdit:focus {
@@ -94,11 +97,11 @@ QLineEdit:focus {
 /*===========================================================================*/
 
 QTabWidget {
-    background: rgb(232, 231, 240);
+    background: black;
 }
 
 QTabWidget::pane {
-    background: rgb(232, 231, 240);
+    background: transparent;
 }
 
 QTabWidget::tab-bar {
@@ -109,10 +112,11 @@ QTabWidget::tab-bar {
 QTabBar::tab {
     margin-top: 0px;
     margin-bottom: 0px;
-    color: black;
-    background: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(232, 231, 240, 255), stop:1 rgba(242, 250, 255, 255));
+    color: white;
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #4e4e4e, stop: 1.0 #3a3a3a);
     border-style: solid;
-    border-color: silver;
+    border-color: dark gray;
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-right-width: 0px;
@@ -120,8 +124,6 @@ QTabBar::tab {
     border-bottom-right-radius:6px;
     border-bottom-left-radius:6px;
     padding: 2px;
-    font-family: "Bebas Kai";
-    font-size: 12pt;
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover {

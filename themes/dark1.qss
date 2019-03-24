@@ -75,7 +75,6 @@ MDIButton{
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    padding: 4px;
     border-color: #76797c;
 }
 
@@ -153,7 +152,7 @@ QPushButton{
     border-style: solid;
     color: rgb(255, 255, 255);
     padding: 6px;
-    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(77, 77, 77, 255), stop:1 rgba(97, 97, 97, 255));
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(97, 97, 97, 255), stop:1 rgba(117, 117, 117, 255));
     border-radius: 5px;
 }
 
@@ -168,7 +167,7 @@ QPushButton:hover{
     border-style: solid;
     color: rgb(255, 255, 255);
     padding: 6px;
-    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(107, 107, 107, 255), stop:1 rgba(157, 157, 157, 255));
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(137, 137, 137, 255), stop:1 rgba(187, 187, 187, 255));
 }
 
 QPushButton:pressed{
@@ -182,7 +181,7 @@ QPushButton:pressed{
     border-style: solid;
     color: rgb(255, 255, 255);
     padding: 6px;
-    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(77, 77, 77, 255), stop:1 rgba(97, 97, 97, 255));
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(97, 97, 97, 255), stop:1 rgba(117, 117, 117, 255));
 }
 
 QPushButton:disabled{
